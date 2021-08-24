@@ -1,0 +1,260 @@
+/*  imports css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+.header {
+    background-color: var(--secundary-color);
+    width: 100%;
+    display: inline-flex;
+    border-radius: 5px;
+    color: var( --color-fofo);
+}
+
+* {
+    --primary-color: #171717;
+    --secundary-color: #121212;
+    --color-of-items: #ff0000;
+    --light-gray-color: #66f2d5;
+    --color-fofo: #f0f0f0;
+    --white: #fff;
+    --cinza: #ccc;
+    --black: #000;
+}
+
+::selection {
+    background-color: var(--color-of-items);
+}
+
+.containter {
+    display: flex;
+}
+
+.logo {
+    margin-left: 2rem;
+    margin-top: 8px;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.title {
+    margin-left: 1rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.angular-description {
+    color: var(--white);
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 3em;
+    font-size: 20px;
+    width: 25%;
+}
+
+.title-angular {
+    font-size: 30px;
+}
+
+button {
+    margin-top: 20px;
+    margin-left: 310px;
+    font-family: inherit;
+    color: var(--cinza);
+    border-radius: 7px;
+  }
+
+  button:hover {
+      color: var(--color-fofo);
+  }
+
+  .simple {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid var(--color-of-items);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+  }
+  
+  .simple::after {
+    content: "";
+    background-color: var(--color-of-items);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+  }
+
+  .fill {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid var(--color-fofo);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+  }
+  
+  .fill::after {
+    content: "";
+    background-color: var(--color-of-items);
+    border-color: var(--color-fofo);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+    border-radius: 7px;
+  }
+  
+  .fill:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+  /* End of Fill Button  */
+  
+  /* Slide button styling */
+  .slide {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 30px 13px;
+    outline: 0;
+    border: 1px solid var(--white);
+    cursor: pointer;
+    position: relative;
+    background-color: var(--white);
+  }
+  
+  .slide i {
+    opacity: 0;
+    font-size: 13px;
+    transition: 0.2s;
+    position: absolute;
+    right: 10px;
+    top: 21px;
+    transition: transform 1;
+  }
+  
+  .slide div {
+    transition: transform 0.8s;
+  }
+  
+  .slide:hover div {
+    transform: translateX(-6px);
+  }
+  
+  .slide::after {
+    content: "";
+    background-color: var( --light-gray-color);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+  }
+  
+  .slide:hover i {
+    opacity: 1;
+    transform: translateX(-6px);
+  }
+  /* End of Slide Button  */
+
+  .angular-banner {
+      justify-content: right;
+  }
+
+  .angular-banner img  {
+      max-width: 500px;
+      max-height: 900px;
+      margin-top: -300px;
+      margin-right: 80px;
+      float: right;
+  }
+
+
+  /*  2 section */
+.container2 {
+    margin-top: 700px;
+}
+
+.get-start-title {
+    font-size: 40px;
+    color: var(--white);
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.steps-section {
+    text-align: center;
+    border: 1px solid var(--color-of-items);
+    margin: 20px;
+    border-radius: 10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 250px;
+    padding-right: 250px;
+    margin: 2%;
+}
+
+.steps {
+    color: var(--white);
+    font-size: 25px;
+    font-family: 'Balsamiq Sans', cursive;
+    margin-left: 40px;
+}
+
+.steps-section-container {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: var(--white);
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.link {
+    color: var(--white);
+    text-decoration-style: solid bottom;
+    text-decoration-color: var(--color-of-items);
+}
+
+.link:hover {
+    transition: .7ms all;
+    color: var(--color-of-items);
+}
+
+.code {
+    background-color: var(--secundary-color);
+    padding: 10px;
+    border-left: 3px solid var(--color-of-items);
+    border-radius: 3px;
+    margin-top: 40px
+}
+
+.code-description {
+    margin-bottom: 10px;
+}
+
+.redirectclass {
+    font-size: 30px;
+    display: block;
+    margin-top: 50px;
+    font-family: 'Balsamiq Sans',cursive;
+    text-decoration-color: var(--color-of-items);
+    color: var(--white);
+    text-align: center;
+}
+
+.redirectclass:hover {
+    color: var(--color-of-items)
+}
